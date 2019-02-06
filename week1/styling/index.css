@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Poppins:900");
+
+:root {
+  --baseFont: "Open Sans";
+  --titleFont: "Poppins";
+}
+
+html {
+  font-size: 125%;
+  font-family: var(--baseFont);
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: var(--titleFont);
+}
+
+.sidenavigation {
+  color: white;
+  background-color: black;
+  width: 100px;
+  height: 50px;
+}

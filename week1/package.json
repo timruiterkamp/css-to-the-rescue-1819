@@ -1,0 +1,36 @@
+{
+  "name": "week1",
+  "version": "1.0.0",
+  "description": "1. Be inspired by Vitaly Friedman. 2. Pick an assignment 3. Understand your CSS methodology 4. Read and explain articles 5. Work!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel ./index.html",
+    "build": "parcel build ./index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.4.7",
+    "postcss-cli": "^6.1.1",
+    "postcss-modules": "^1.4.1",
+    "postcss-nested": "^4.1.1",
+    "precss": "^4.0.0"
+  },
+  "postcss": {
+    "modules": false,
+    "plugins": {
+      "postcss-nested": {},
+      "autoprefixer": {
+        "browsers": [
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "not ie < 9"
+        ],
+        "flexbox": "no-2009"
+      }
+    }
+  }
+}
