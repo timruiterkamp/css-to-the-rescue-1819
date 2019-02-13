@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Brotherhood";
+  src: url("./fonts/Brotherhood.eot");
+  src: url("./fonts/Brotherhood.eot?#iefix") format("em./fonts/edded-opentype"),
+    url("./fonts/Brotherhood.woff2") format("woff2"),
+    url("./fonts/Brotherhood.woff") format("woff"),
+    url("./fonts/Brotherhood.ttf") format("truetype"),
+    url("./fonts/Brotherhood.svg#Brotherhood") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Poppins:900");
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");

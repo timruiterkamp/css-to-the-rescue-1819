@@ -6,25 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <header>
-      <nav class="sidenavigation">
-        <ul class="sidenavigation__items">
-          <li class="sidenavigation__item sidenavigation__item--active">
-            Introduction
+    <header class="header">
+      <nav class="header__nav menu">
+        <input class="menu__btn" type="checkbox" id="menu-btn" />
+        <label class="menu__label" for="menu-btn"></label>
+        <ul class="menu__items">
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="#article__solution"
+              >Introduction</a
+            >
           </li>
-          <li class="sidenavigation__item">Solutions</li>
-          <li class="sidenavigation__item">personal thoughts</li>
-          <li class="sidenavigation__item">Talking dogs</li>
-          <li class="sidenavigation__item">Related</li>
-          <li class="sidenavigation__item">Footnotes</li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#article__solution">Solutions</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#article__personal-thoughts"
+              >personal thoughts</a
+            >
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#article__talkingdogs">Talking dogs</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#article__related">Related</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#article__footnotes">Footnotes</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <h1 class="article-title">Add nonsense</h1>
+    <main class="article">
+      <h1 class="article__title">Add nonsense</h1>
 
-      <section id="intro" class="introduction">
-        <p>
+      <section id="intro" class="article__introduction">
+        <p class="article__content">
           Marijn is a software engineer. He can only use his left hand, and with
           that hand he has difficulty with fine motor control. This means typing
           can be hard for him. It’s even one of the reasons why he didn’t finish
@@ -33,68 +50,75 @@
           ages.
         </p>
 
-        <p>
+        <p class="article__content">
           Basically the problem he has with keyboard layouts is that not all
           keys are next to each other.
         </p>
 
-        <figure>
+        <figure class="article__image">
           <!-- <img src="/images/marijn-was.jpg" alt="A keyboard with the letters W, A and S highlighted" /> -->
-          <figcaption>
+          <figcaption class="article__image-caption">
             On a QWERTY keyboard it’s easy for him to type the word
             <em>was</em> because the letters are close to each other.
           </figcaption>
         </figure>
 
-        <figure>
+        <figure class="article__image">
           <!-- <img src="/images/marijn-is.jpg" alt="A keyboard with the letters I and S highlighted" /> -->
-          <figcaption>
+          <figcaption class="article__image-caption">
             Typing the word <em>is</em> is much harder though. He will have to
             move his hand and exactly point it to that one small square.
           </figcaption>
         </figure>
 
-        <p>
+        <p class="article__content">
           After observing Marijn using his computer, Rick Buter, a student of
           mine, explored alternative ways of typing words. What if, Rick
           thought, you would only need a few keys?
         </p>
       </section>
 
-      <section id="solution">
-        <figure>
+      <section id="solution" class="article__solution solution">
+        <figure class="solution__image">
           <!-- <img src="/images/marijn-prototype.jpg" alt="A keyboard with the letters u, i, o, j, k, and l highlighted" /> -->
-          <figcaption>
+          <figcaption class="solution__image-caption">
             What if you could type complete sentences by only using the u, i, o,
             j, k, and l keys?
           </figcaption>
         </figure>
 
-        <p>
+        <p class="solution__content">
           And so he created a prototype where
-          <a>with only six keys you can type common words.</a
-          ><a href="#fn-1" id="fnref-1" title="see footnote" class="footnote"
+          <a class="solution__link"
+            >with only six keys you can type common words.</a
+          ><a
+            href="#fn-1"
+            id="fnref-1"
+            title="see footnote"
+            class="solution__footnote"
             ><sup>1</sup></a
           >
           On this video you can see me typing the words
           <em>exclusive design</em>.
         </p>
 
-        <video controls="">
+        <video controls="" class="solution__videos">
           <!-- <source src="/images/six-key.mp4" type="video/mp4">
       <source src="/images/six-key.webm" type="video/webm"> -->
         </video>
 
-        <h2 id="allowingweirdideas">Allowing weird ideas</h2>
+        <h2 id="allowingweirdideas" class=" solution__subtitle">
+          Allowing weird ideas
+        </h2>
 
-        <p>
+        <p class="solution__content">
           At first Rick didn’t dare to mention his idea, let alone create a
           working prototype. When he first thought of it, it simply seemed too
           ridiculous. Only when I explicitly asked my students to come up with
           nonsensical ideas did he dare to make a prototype and test it.
         </p>
 
-        <p>
+        <p class="solution__content">
           When he first showed this prototype to Marijn, he had to laugh indeed.
           It looked so ridiculous and complicated, it didn&#8217;t seem to make
           any sense. Yet after trying it a few times he had to conclude that
@@ -105,22 +129,26 @@
         </p>
       </section>
 
-      <section id="personal-thoughts">
-        <p>
+      <section id="personal-thoughts" class="thoughts article__thoughts">
+        <p class="thoughts__content">
           Allowing ideas that seem nonsensical into a design proces can lead to
           innovative products. This is a common ideation method used in many
           different creative fields. Questlove explains in his book about
           creativity that some
-          <a
+          <a class="thoughts__link"
             >musicians play music backwards in order to come up with completely
             new sounds</a
-          ><a href="#fn-2" id="fnref-2" title="see footnote" class="footnote"
+          ><a
+            href="#fn-2"
+            id="fnref-2"
+            title="see footnote"
+            class="thoughts__footnote"
             ><sup>2</sup></a
           >
           (not just to listen to hidden satanic messages).
         </p>
 
-        <p>
+        <p class="thoughts__content">
           My personal interest in nonsense has grown while I was working at a
           large web design agency. Everything we did there had to make sense, by
           which I mean that everything had to have an easily measurable effect.
@@ -129,43 +157,51 @@
           the feeling that we were missing out on things.
         </p>
 
-        <p>
+        <p class="thoughts__content">
           Back in 2010, as a reaction to this professional focus on
           <em>utility</em> I started a website called
-          <a href="https://lovenonsense.com/">Love Nonsense</a>, in which I
-          blogged about nonsensical, mostly funny but often insightful topics. I
-          have worked on several nonsensical side projects as well. Like this
+          <a href="https://lovenonsense.com/" class="thoughts__link"
+            >Love Nonsense</a
+          >, in which I blogged about nonsensical, mostly funny but often
+          insightful topics. I have worked on several nonsensical side projects
+          as well. Like this
           <a>script that translates colour code into written language.</a
-          ><a href="#fn-3" id="fnref-3" title="see footnote" class="footnote"
+          ><a
+            href="#fn-3"
+            id="fnref-3"
+            title="see footnote"
+            class="thoughts__footnote"
             ><sup>3</sup></a
           >
         </p>
 
-        <figure>
+        <figure class="thoughts__image">
           <!-- <img src="/images/rectangle.png" alt="An image of a coloured rectangle"/></div> -->
-          <figcaption>
+          <figcaption class="thoughts__image-caption">
             A very unsaturated magenta rectangle — very wide and not high at all
             — on a rather saturated, dark red background
           </figcaption>
         </figure>
 
-        <p>
+        <p class="thoughts__content">
           At first this idea of making colour accessible to blind people seemed
           nonsensical to me, since I assumed blind people can’t see colour.
           Later it turned out that some blind people can see colour, and others
           may have memory of it, like I explained in the section about
-          <a href="/fuckups-mama/#assumptionsaboutblindpeople"
+          <a
+            href="/fuckups-mama/#assumptionsaboutblindpeople"
+            class="thoughts__link"
             >Assumptions about blind people</a
           >.
         </p>
 
-        <p>
+        <p class="thoughts__content">
           Just like the six-key-typing project by Rick Buter, this is an example
           of using nonsense in order to allow weird ideas, and exploring them.
           And in these cases they resulted in valuable new insights.
         </p>
 
-        <p>
+        <p class="thoughts__content">
           Apart from a simple ideation tool to allow weird ideas, there are
           other reasons to use nonsense as well. Other reasons are lifting ideas
           beyond the obvious, breaking out of a single rusty context, exploring
@@ -173,10 +209,10 @@
         </p>
       </section>
 
-      <aside>
-        <h3 id="talkingdogs">Talking dogs</h3>
+      <section class="article__talkingdogs talkingsdogs">
+        <h3 id="talkingdogs" class="talkingsdogs__title">Talking dogs</h3>
 
-        <p>
+        <p class="talkingsdogs__content">
           An example of using nonsense to lift ideas beyond the obvious is this
           prototype of a talking dog. During my master research I organised a
           few Exclusive Design Challenges. Some of the more interesting ideas
@@ -301,7 +337,7 @@
           calls engineering, into the field of design. You are very welcome to
           contribute.
         </p>
-      </aside>
+      </section>
 
       <h2 id="fun">Fun</h2>
 

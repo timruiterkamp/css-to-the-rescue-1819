@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Poppins:900");
+@import "./fonts.css";
+@import "./animations.css";
+@import "./menu.css";
 
 :root {
   --baseFont: "Open Sans";
@@ -18,32 +20,65 @@ html {
 
 body {
   display: grid;
-  grid-template-columns: 10vw auto 22vw;
-  grid-template-rows: 25% 100px auto;
+  grid-template-columns:
+    [full-start] minmax(1rem, 0.5fr) [main-start] minmax(1rem, 3fr) [main-end] minmax(
+      10rem,
+      1fr
+    )
+    [full-end];
   margin: 0;
   padding: 0;
   width: 100%;
   max-width: 100vw;
-}
+  background-color: white;
+  scroll-behavior: smooth;
 
-h1 {
-  font-family: var(--titleFont);
-  line-height: 0.7;
-
-  &.article-title {
-    font-size: 20vh;
-    width: 50%;
+  &.night {
+    background-color: #3a3a3a;
+    color: white;
   }
 }
 
-main {
+.header {
+  grid-area: full-start;
+}
+
+.article {
   padding: 0 2em;
-  border-left: 1px solid #f2efea;
+  grid-area: main-start;
+  opacity: 0;
+  animation: 1s fadeInUpContent ease-in-out forwards;
+
+  &__title {
+    font-family: var(--titleFont);
+    line-height: 0.7;
+    font-size: 20vh;
+    width: 50%;
+    position: relative;
+
+    &:before {
+      content: "NONSENSE";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-family: "Brotherhood", cursive;
+      font-size: 15rem;
+      color: #0000000d;
+      font-weight: 700;
+      display: block;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      animation: revealLeft 1s 0.3s forwards;
+    }
+  }
 }
 
 .news {
   background-color: var(--color-grey);
   font-size: 80%;
+  grid-area: main-end;
 
   &__weather {
     background-color: var(--color-blue);
@@ -77,28 +112,5 @@ main {
 
   &__articles {
     padding: 1em;
-  }
-}
-
-.sidenavigation {
-  position: relative;
-
-  &__items {
-    position: fixed;
-    top: 6vh;
-    padding: 0;
-  }
-
-  &__item {
-    padding: 1em;
-    list-style-type: none;
-    max-width: 80%;
-
-    &--active {
-      width: 61%;
-      padding: 1em 1em 0.7em;
-      background-color: black;
-      color: white;
-    }
   }
 }
