@@ -29,6 +29,11 @@ function fetchWeather() {
           data.daily.summary
         }</p>
       `;
+
+      const body = document.querySelector("body");
+      body.style = `line-height: ${1.5 *
+        (data.currently.pressure / 1000)}; opacity: ${1 -
+        (1 / data.currently.visibility) * 3}`;
     })
     .catch(err => console.error(err));
 }

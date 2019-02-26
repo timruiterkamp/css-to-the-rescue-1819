@@ -1,0 +1,58 @@
+.news {
+  background-color: var(--color-grey);
+  font-size: 80%;
+  grid-area: main-end;
+  height: 100vh;
+  overflow: scroll;
+
+  &__weather {
+    background-color: var(--color-blue);
+    padding-bottom: 0.7em;
+
+    & > * {
+      padding: 0.75em 1.25em;
+    }
+
+    &.wind {
+      background-color: var(--color-wind);
+
+      header {
+        background-color: var(--color-wind-dark);
+      }
+    }
+
+    &.partly-cloudy-day {
+      background: linear-gradient(
+        to bottom,
+        #2980b9,
+        #6dd5fa,
+        #f3f6fb
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      header {
+        background: linear-gradient(
+          to bottom,
+          #0071bb,
+          #2980b9,
+          #2980b9
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+    }
+    &.rain {
+      background-color: var(--color-blue);
+
+      header {
+        background-color: var(--color-dark-blue);
+      }
+    }
+
+    header {
+      background-color: var(--color-dark-blue);
+      color: white;
+    }
+  }
+
+  &__articles {
+    padding: 1em;
+  }
+}

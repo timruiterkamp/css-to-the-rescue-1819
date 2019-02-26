@@ -1,0 +1,112 @@
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &__object-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: none;
+    justify-content: center;
+  }
+
+  &__speed-1 {
+    transform: translateZ(-1px) scale(2);
+  }
+
+  &__speed-2 {
+    transform: translateZ(-2px) scale(3);
+  }
+
+  &__speed-3 {
+    transform: translateZ(-3px) scale(4);
+  }
+
+  &__speed-4 {
+    transform: translateZ(-4px) scale(5);
+  }
+
+  &__speed-5 {
+    transform: translateZ(-5px) scale(6);
+  }
+  &__speed-6 {
+    transform: translateZ(-6px) scale(7);
+  }
+  &__speed-7 {
+    transform: translateZ(-7px) scale(8);
+  }
+
+  &__object {
+    height: 100vh;
+    width: 100%;
+  }
+
+  &__object-1 {
+    margin-top: 500px;
+    height: 500%;
+  }
+
+  &__object-2 {
+    margin-top: 850px;
+    background: linear-gradient(to left, #ee9ca7, #ffdde1);
+    height: 500%;
+    padding: 2em 1em;
+  }
+
+  &__object-3 {
+    margin-top: 1450px;
+    background: linear-gradient(
+      to left,
+      #0f2027,
+      #203a43,
+      #2c5364
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    height: 500%;
+    padding: 2em 1em;
+  }
+
+  &__object-4 {
+    margin-top: 2150px;
+    background: linear-gradient(
+      to left,
+      #f12711,
+      #f5af19
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 500%;
+    padding: 2em 1em;
+  }
+
+  &__object-5 {
+    margin-top: 3950px;
+    height: 100%;
+    background: linear-gradient(
+      to left,
+      #4e54c8,
+      #8f94fb
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 2em 1em;
+  }
+
+  &__object-6 {
+    margin-top: 4050px;
+    background: linear-gradient(
+      to left,
+      #36d1dc,
+      #5b86e5
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 500%;
+    padding: 2em 1em;
+  }
+
+  &__object-7 {
+    margin-top: 5150px;
+    height: 500%;
+    padding: 2em 1em;
+    background-color: #fff;
+  }
+}

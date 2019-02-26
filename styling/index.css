@@ -1,0 +1,46 @@
+@import "./fonts.css";
+@import "./animations.css";
+@import "./header/header.css";
+@import "./article/articles.css";
+@import "./news/news.css";
+
+:root {
+  --baseFont: "Open Sans";
+  --titleFont: "Poppins";
+  --color-grey: #f3f6fb;
+  --color-blue: #4cc4fb;
+  --color-dark-blue: #03a9f4;
+  --color-wind: #ccefff;
+  --color-wind-dark: #7fd8f7;
+}
+
+html {
+  font-size: 125%;
+  font-family: var(--baseFont);
+  line-height: 1.5;
+}
+
+body {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(1rem, 0.5fr) [main-start] minmax(1rem, 3fr) [main-end] minmax(
+      10rem,
+      1fr
+    )
+    [full-end];
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100vw;
+  background-color: white;
+  scroll-behavior: smooth;
+
+  &.night {
+    background-color: #3a3a3a;
+    color: white;
+  }
+}
+
+.page-content {
+  height: 40000px;
+}
