@@ -15,7 +15,7 @@ function fetchWeather() {
       degToCompass(data.currently.windBearing);
 
       document.querySelector(
-        ".news"
+        "body"
       ).style = `transform: skewY(${wind}deg); marginTop: ${wind};`;
       container.classList.add(data.currently.icon);
       container.innerHTML = `

@@ -21,13 +21,9 @@ html {
 }
 
 body {
-  display: grid;
-  grid-template-columns:
-    [full-start] minmax(1rem, 0.5fr) [main-start] minmax(1rem, 3fr) [main-end] minmax(
-      10rem,
-      1fr
-    )
-    [full-end];
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 100%;

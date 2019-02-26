@@ -1,0 +1,18 @@
+.story {
+  width: 250px;
+
+  &__content {
+    text-align: center;
+    color: black;
+    padding: 1em;
+    font-size: 90%;
+  }
+
+  &__link {
+    text-align: center;
+    font-family: "Brotherhood", cursive;
+    font-size: 1em;
+    text-decoration: none;
+    margin: 0 auto;
+  }
+}

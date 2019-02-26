@@ -45,10 +45,11 @@
 
       <section
         id="intro"
-        class="article__introduction parallax__object-wrapper parallax__speed-1"
+        class="article__introduction introduction parallax__object-wrapper parallax__speed-1"
       >
         <div class="parallax__object parallax__object-1">
-          <p class="article__content">
+          <div class="introduction__wrapper">
+          <p class="introduction__content">
             Marijn is a software engineer. He can only use his left hand, and
             with that hand he has difficulty with fine motor control. This means
             typing can be hard for him. It’s even one of the reasons why he
@@ -57,33 +58,34 @@
             typing it would take him ages.
           </p>
 
-          <p class="article__content">
+          <p class="introduction__content">
             Basically the problem he has with keyboard layouts is that not all
             keys are next to each other.
           </p>
 
-          <figure class="article__image">
-            <img src="https://exclusive-design.vasilis.nl/images/marijn-was.jpg" alt="A keyboard with the letters W, A and S highlighted" />
-            <figcaption class="article__image-caption">
+          <figure class="introduction__image figure">
+            <img class="figure__image" src="https://exclusive-design.vasilis.nl/images/marijn-was.jpg" alt="A keyboard with the letters W, A and S highlighted" />
+            <figcaption class="introduction__image-caption">
               On a QWERTY keyboard it’s easy for him to type the word
               <em>was</em> because the letters are close to each other.
             </figcaption>
           </figure>
 
-          <figure class="article__image">
-            <img src="https://exclusive-design.vasilis.nl/images/marijn-is.jpg" alt="A keyboard with the letters I and S highlighted" />
-            <figcaption class="article__image-caption">
+          <figure class="introduction__image figure">
+            <img class="figure__image" src="https://exclusive-design.vasilis.nl/images/marijn-is.jpg" alt="A keyboard with the letters I and S highlighted" />
+            <figcaption class="introduction__image-caption">
               Typing the word <em>is</em> is much harder though. He will have to
               move his hand and exactly point it to that one small square.
             </figcaption>
           </figure>
 
-          <p class="article__content">
+          <p class="introduction__content">
             After observing Marijn using his computer, Rick Buter, a student of
             mine, explored alternative ways of typing words. What if, Rick
             thought, you would only need a few keys?
           </p>
         </div>
+      </div>
       </section>
 
       <section
@@ -91,8 +93,10 @@
         class="article__solution solution parallax__object-wrapper parallax__speed-2"
       >
         <div class="parallax__object parallax__object-2">
-          <figure class="solution__image">
-            <img src="https://exclusive-design.vasilis.nl/images/marijn-prototype.jpg" alt="A keyboard with the letters u, i, o, j, k, and l highlighted" />
+          <h2 class="solution__heading">Solution</h2>
+          <div class="solution__wrapper">
+          <figure class="solution__image figure">
+            <img class="figure__image" src="https://exclusive-design.vasilis.nl/images/marijn-prototype.jpg" alt="A keyboard with the letters u, i, o, j, k, and l highlighted" />
             <figcaption class="solution__image-caption">
               What if you could type complete sentences by only using the u, i,
               o, j, k, and l keys?
@@ -116,7 +120,7 @@
 
           <video controls="" class="solution__videos">
             <source src="https://exclusive-design.vasilis.nl/images/six-key.mp4" type="video/mp4">
-      <source src="https://exclusive-design.vasilis.nl/images/six-key.webm" type="video/webm">
+            <source src="https://exclusive-design.vasilis.nl/images/six-key.webm" type="video/webm">
           </video>
 
           <h2 id="allowingweirdideas" class=" solution__subtitle">
@@ -140,6 +144,7 @@
             >.
           </p>
         </div>
+        </div>
       </section>
 
       <section
@@ -147,6 +152,9 @@
         class="thoughts article__thoughts parallax__object-wrapper parallax__speed-3"
       >
         <div class="parallax__object parallax__object-3">
+          <h2 class="thoughts__heading">Thoughts</h2>
+          <div class="thoughts__wrapper">
+            <div class="thoughts__content-wrapper">
           <p class="thoughts__content">
             Allowing ideas that seem nonsensical into a design proces can lead
             to innovative products. This is a common ideation method used in
@@ -192,14 +200,6 @@
             >
           </p>
 
-          <figure class="thoughts__image">
-            <img src="https://exclusive-design.vasilis.nl/images/rectangle.png" alt="An image of a coloured rectangle"/></div>
-            <figcaption class="thoughts__image-caption">
-              A very unsaturated magenta rectangle — very wide and not high at
-              all — on a rather saturated, dark red background
-            </figcaption>
-          </figure>
-
           <p class="thoughts__content">
             At first this idea of making colour accessible to blind people
             seemed nonsensical to me, since I assumed blind people can’t see
@@ -226,29 +226,43 @@
             ideas beyond the obvious, breaking out of a single rusty context,
             exploring the unexpected, and of course having fun.
           </p>
+            </div>
+          <div class="thoughts__image-wrapper"> 
+            <figure class="thoughts__image figure">
+              <img class="figure__image" src="https://exclusive-design.vasilis.nl/images/rectangle.png" alt="An image of a coloured rectangle"/>
+              <figcaption class="thoughts__image-caption">
+                A very unsaturated magenta rectangle — very wide and not high at
+                all — on a rather saturated, dark red background
+              </figcaption>
+            </figure>
+          </div>
+        </div>
         </div>
       </section>
 
       <section
-        class="article__talkingdogs talkingsdogs parallax__object-wrapper parallax__speed-4"
+        class="article__talkingdogs talkingdogs parallax__object-wrapper parallax__speed-4"
       >
         <div class="parallax__object parallax__object-4">
-          <h3 id="talkingdogs" class="talkingsdogs__title">Talking dogs</h3>
+          <h2 class="talkingdogs__heading">The nononsense way</h2>
+          <div class=" talkingdogs__wrapper">
+          <div class="talkingdogs__ideas">
+          <h3 id="talkingdogs" class="talkingdogs__title">Talking dogs</h3>
 
-          <p class="talkingsdogs__content">
+          <p class="talkingdogs__content">
             An example of using nonsense to lift ideas beyond the obvious is
             this prototype of a talking dog. During my master research I
             organised a few Exclusive Design Challenges. Some of the more
             interesting ideas grew out of the <em>add nonsense</em> principle.
             Like this idea of smart glasses that give a blind person some
             information about the surroundings. This is a quite common idea, and
-            <a>working implementations of this already exists.</a
-            ><a href="#fn-4" id="fnref-4" title="see footnote" class="footnote"
+            <a class="talkingdogs__link">working implementations of this already exists.</a
+            ><a class="talkingdogs__link" href="#fn-4" id="fnref-4" title="see footnote" class="footnote"
               ><sup>4</sup></a
             >
             This team took this obvious idea to a next level by
-            <a>attaching the speaker to the guide dog.</a
-            ><a href="#fn-5" id="fnref-5" title="see footnote" class="footnote"
+            <a class="talkingdogs__link">attaching the speaker to the guide dog.</a
+            ><a class="talkingdogs__link" href="#fn-5" id="fnref-5" title="see footnote" class="footnote"
               ><sup>5</sup></a
             >
             All of a sudden all kinds of new possibilities and questions emerge.
@@ -258,18 +272,19 @@
             talking dog? It would be so interesting, and so much fun, to explore
             this idea further.
           </p>
+          </div>
+          <div class="talkingdogs__ideas">
+          <h3 class="talkingdogs__title" id="anelectricwheelchair-mouse">An electric wheelchair-mouse</h3>
 
-          <h3 id="anelectricwheelchair-mouse">An electric wheelchair-mouse</h3>
-
-          <p>
+          <p class="talkingdogs__content">
             At another one of these workshops one of the teams had a lot of fun,
             together with Marijn, with working on an idea of using Marijn’s
             complete electric wheelchair as a device to control a website. They
             envisioned Marijn moving the mouse cursor by driving through a large
             room, filled with sensors. While possibly spectacular, this of
             course is a rather unpractical idea. Yet it did contribute to my
-            <a>simple spatial navigation experiment,</a
-            ><a href="#fn-6" id="fnref-6" title="see footnote" class="footnote"
+            <a class="talkingdogs__link">simple spatial navigation experiment,</a
+            ><a class="talkingdogs__link" href="#fn-6" id="fnref-6" title="see footnote" class="footnote"
               ><sup>6</sup></a
             >
             which can be seen as a more economical and more practical version of
@@ -277,17 +292,19 @@
             which is important as well when working with a serious subject like
             accessibility.
           </p>
+        </div>
+          <div class="talkingdogs__ideas">
 
-          <h3 id="accessiblevideodocumentaries">
+          <h3 class="talkingdogs__title" id="accessiblevideodocumentaries">
             Accessible video documentaries
           </h3>
 
-          <p>
+          <p class="talkingdogs__content">
             A nice example of breaking out of a single, rusty context by
             allowing nonsense is the project I did with Simon Dogger. He asked
             me to create
-            <a>an accessible version of the 2doc website</a
-            ><a href="#fn-7" id="fnref-7" title="see footnote" class="footnote"
+            <a class="talkingdogs__link">an accessible version of the 2doc website</a
+            ><a class="talkingdogs__link" href="#fn-7" id="fnref-7" title="see footnote" class="footnote"
               ><sup>7</sup></a
             >
             for him, a website with video documentaries. This may be dismissed
@@ -300,7 +317,7 @@
             that’s of interest to Simon’s research as a designer.
           </p>
 
-          <p>
+          <p class="talkingdogs__content">
             It reminds me of a discussion I had with Katrien Vermeulen, my wife,
             a long time ago when I still worked at this web design agency. Back
             then we were working on checkout flows for webshops, and our sole
@@ -312,7 +329,7 @@
             harder instead of easier to buy things.
           </p>
 
-          <p>
+          <p class="talkingdogs__content">
             Both these examples, the one of making videos accessible to blind
             people, and the one about making webshop checkout flows harder to
             use are good examples of not dismissing arguments that sound
@@ -321,13 +338,16 @@
             in completely different products.
           </p>
 
-          <h3 id="invisibleanimations">Invisible animations</h3>
+        </div>
 
-          <p>
+          <div class="talkingdogs__ideas">
+          <h3 class="talkingdogs__title" id="invisibleanimations">Invisible animations</h3>
+
+          <p class="talkingdogs__content">
             And then there are the completely unexpected ideas that may pop-up
             when you ask for nonsense. Like the project with
-            <a>the invisible animations I did with Hannes Wallrafen.</a
-            ><a href="#fn-8" id="fnref-8" title="see footnote" class="footnote"
+            <a class="talkingdogs__link">the invisible animations I did with Hannes Wallrafen.</a
+            ><a class="talkingdogs__link" href="#fn-8" id="fnref-8" title="see footnote" class="footnote"
               ><sup>8</sup></a
             >
             When I asked Hannes if he had some ideas that were too ridiculous to
@@ -342,10 +362,12 @@
             animation is a lot of work, writing a small punchline is much easier
             to create, and much easier to iterate.
           </p>
+        </div>
 
-          <h3 id="sniggeringscreenreaders">Sniggering screen readers</h3>
+          <div class="talkingdogs__ideas">
+          <h3 class="talkingdogs__title" id="sniggeringscreenreaders">Sniggering screen readers</h3>
 
-          <p>
+          <p class="talkingdogs__content">
             Another idea that came out of this project was the idea to make
             screen readers laugh. It was the first time Hannes heard some
             emotion from his screen reader. It made me realise that even within
@@ -354,7 +376,7 @@
             design.
           </p>
 
-          <p>
+          <p class="talkingdogs__content">
             This idea of making screen readers laugh resulted in the open
             database of strings that make different voices of different screen
             readers laugh. This database is funny, sure, but it is also a first
@@ -363,17 +385,19 @@
             welcome to contribute.
           </p>
         </div>
+        </div>
+      </div>
       </section>
 
       <section class="article__fun fun parallax__object-wrapper parallax__speed-5">
         <div class="parallax__object parallax__object-5">
-          <h2 id="fun">Fun</h2>
+          <h2 class="fun__title" id="fun">Fun</h2>
 
-          <p>
+          <p class="fun__content">
             Of course there are serious reasons for allowing nonsense into your
             design process. But for me the most important reason for using
             nonsense, and not some other ideation method, is to allow
-            <em>fun</em> into the design process. Designing accessibility,
+            <em class="fun__strong">fun</em> into the design process. Designing accessibility,
             helping disabled people lead an independent life is serious work.
             But it can be fun as well. And only if we allow fun will we be able
             to start making pleasurable user interfaces. If we do, maybe some
@@ -382,10 +406,10 @@
             interface fun to use for someone who is blind.
           </p>
 
-          <p>
+          <p class="fun__content">
             And so, by writing about nonsense, we've reached the end of this
             thesis.
-            <a href="/conclusion/">The only thing that’s left is a conclusion</a
+            <a class="fun__link" href="/conclusion/">The only thing that’s left is a conclusion</a
             >, if there’s any.
           </p>
         </div>
@@ -393,124 +417,124 @@
 
       <section class="article__related related parallax__object-wrapper parallax__speed-6">
         <div class="parallax__object parallax__object-6">
-          <h2>Elsewhere on this website</h2>
-          <h3>All articles</h3>
-          <p>
+          <h2 class="related__title">Elsewhere on this website</h2>
+          <h3 class="related__subtitle" >All articles</h3>
+          <p class="related__content">
             All articles can be read in a structured order, staring with the
             context of this reasearch, followed by the things I did and created,
             and ending with recommendations.
           </p>
           <ul class="related__articles">
-            <li class="related__article article">
-              <p class="article__content"><a href="/">Introduction</a></p>
+            <li class="related__article story">
+              <p class="story__content"><a class="story__link" href="/">Introduction</a></p>
             </li>
-            <li class="related__article article">
-              <p class="article__link">
-                <a href="https://exclusive-design.vasilis.nl/everybodys-paradox/">Everybody’s paradox</a>
+            <li class="related__article story">
+              <p class="story__content">
+                <a class="story__link" href="https://exclusive-design.vasilis.nl/everybodys-paradox/">Everybody’s paradox</a>
               </p>
-              <p class="article__content">
+              <p class="story__content">
                 The reason why the web is accessible is because it was designed
                 to be used by everyone. The reason why the web isn’t accessible
                 is the same.
               </p>
             </li>
-            <li class="related__article article">
-              <p class="article__link">
-                <a href="https://exclusive-design.vasilis.nl/the-defaults-suck/">The defaults suck</a>
+            <li class="related__article story">
+              <p class="story__content">
+                <a class="story__link" href="https://exclusive-design.vasilis.nl/the-defaults-suck/">The defaults suck</a>
               </p>
-              <p class="article__content">
+              <p class="story__content">
                 Could it be that the web is broken because the defaults our
                 tools use are not very well designed?
               </p>
             </li>
-            <li class="related__article article">
-              <p class="article__link">
-                <a href="https://exclusive-design.vasilis.nl/flipping-things/">Flipping things</a>
+            <li class="related__article story">
+              <p class="story__content">
+                <a class="story__link" href="https://exclusive-design.vasilis.nl/flipping-things/">Flipping things</a>
               </p>
               <p class="article__link">
                 Inclusive Design as practiced on the web right now could be a
                 nice end goal, but I do think we are not there yet.
               </p>
             </li>
-            <li class="related__article article">
-              <p class="article__link">
-                <a href="https://exclusive-design.vasilis.nl/fuckups-mama/">Fuckup’s mama</a>
+            <li class="related__article story">
+              <p class="story__content">
+                <a class="story__link" href="https://exclusive-design.vasilis.nl/fuckups-mama/">Fuckup’s mama</a>
               </p>
-              <p class="article__content">
+              <p class="story__content">
                 Tales of guessing how people use their computers. And then, of
                 course, getting it all wrong.
               </p>
             </li>
-            <li class="related__article article">
-              <p class="article__link">
-                <a href="https://exclusive-design.vasilis.nl/more-death-to-more-bullshit/"
+            <li class="related__article story">
+              <p class="story__content">
+                <a class="story__link" href="https://exclusive-design.vasilis.nl/more-death-to-more-bullshit/"
                   >More death to more bullshit</a
                 >
               </p>
-              <p class="article__content">
+              <p class="story__content">
                 Screen readers tend to talk a lot. Which becomes increasingly
                 annoying with more content. A recalibration of our love for
                 features would be very welcome.
               </p>
             </li>
-            <li class="related__article article">
-              <p class="article__link">
-                <a href="https://exclusive-design.vasilis.nl/design-like-its-1999/">Design like it’s 1999</a>
+            <li class="related__article story">
+              <p class="story__content">
+                <a class="story__link" href="https://exclusive-design.vasilis.nl/design-like-its-1999/">Design like it’s 1999</a>
               </p>
-              <p class="article__content">
+              <p class="story__content">
                 In which Simon Dogger and I wonder why it’s so hard to use the
                 website with all Dutch national television documentaries.
               </p>
             </li>
-            <li class="related__article article">
-              <p class="article__link">
-                <a href="https://exclusive-design.vasilis.nl/invisible-animations/">Invisible Animations</a>
+            <li class="related__article story">
+              <p class="story__content">
+                <a class="story__link" href="https://exclusive-design.vasilis.nl/invisible-animations/">Invisible Animations</a>
               </p>
-              <p class=" article__content">
+              <p class=" story__content">
                 In which I tell about the tailor made website and the giggling
                 animations I made for Hannes Wallrafen, the famous blind
                 photographer.
               </p>
             </li>
-            <li class="related__article article">
-              <p class="article__link">
-                <a href="https://exclusive-design.vasilis.nl/semantics-schmemantics/">Semantics schmemantics</a>
+            <li class="related__article story">
+              <p class="story__content">
+                <a class="story__link" href="https://exclusive-design.vasilis.nl/semantics-schmemantics/">Semantics schmemantics</a>
               </p>
-              <p class="article__content">
+              <p class="story__content">
                 In which I explain the contrast between web development best
                 practices, and the way our tools present them.
               </p>
             </li>
-            <li class="related__article article">
-              <p class="article__link">
-                <a href="https://exclusive-design.vasilis.nl/stress-cases/">Stress cases</a>
+            <li class="related__article story">
+              <p class="story__content">
+                <a class="story__link" href="https://exclusive-design.vasilis.nl/stress-cases/">Stress cases</a>
               </p>
-              <p class="article__content">
+              <p class="story__content">
                 Edge cases in software development means that you use the
                 extremes to test with. In Web design it means you ignore the
                 extremes. Calling them stress cases might help.
               </p>
             </li>
-            <li class="related__article article">
-              <p class="article__link">
-                <a href="https://exclusive-design.vasilis.nl/coders-should-learn-how-to-design/"
+            <li class="related__article story">
+              <p class="story__content">
+                <a class="story__link" href="https://exclusive-design.vasilis.nl/coders-should-learn-how-to-design/"
                   >Coders should learn how to design</a
                 >
               </p>
-              <p class="article__content">
+              <p class="story__content">
                 We’re developing expertise in choosing rather than in thinking.
                 If we want an accessible web, we need to start designing.
               </p>
             </li>
-            <li class="related__article article">
-              <p><a href="https://exclusive-design.vasilis.nl/add-nonsense/">Add nonsense</a></p>
-              <p>
+            <li class="related__article story">
+              <p class="story__content"><a class="story__link" href="https://exclusive-design.vasilis.nl/add-nonsense/">Add nonsense</a></p>
+              <p class="story__content">
                 Add nonsense, for fun, for surprise, and because we really need
                 to innovate.
               </p>
             </li>
             <li>
-              <p><a href="https://exclusive-design.vasilis.nl//conclusion/">Conclusion</a></p>
+              <p><a class="story__link" href="https://exclusive-design.vasilis.nl//conclusion/">Conclusion</a></p>
               <p>In which I try to reach a conclusion.</p>
             </li>
           </ul>
@@ -630,70 +654,70 @@
             </li>
           </ol>
         </div>
+        <section class="news__articles">
+            <h3>The Exclusive Design Principles</h3>
+            <p>
+              During my research at the Master Design I have worked with four
+              exclusive design principles. With some good will we can organise all
+              chapters in this thesis into these four principles.
+            </p>
+            <ol>
+              <li>
+                <p><a href="/principles/study-situation/">Study situation</a></p>
+                <p>
+                  In order to become specialist designers for all kinds of people
+                  with all kinds of disabilities we have to study different,
+                  individual situations.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="/principles/ignore-conventions/">Ignore conventions</a>
+                </p>
+                <p>
+                  The current conventions are designed by, and thus for, designers.
+                  Not all of these conventions work for non-designers. If we want to
+                  include non-designers, and especially people with disabilities, we
+                  should reconsider these conventions, after we studied their
+                  situations.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a href="/principles/prioritise-identity/">Prioritise identity</a>
+                </p>
+                <p>
+                  Including excluded people into our design process, by seeing them
+                  as co-designers rather than study objects, can help in coming up
+                  with new, and relevant, conventions.
+                </p>
+              </li>
+              <li>
+                <p><a href="/principles/add-nonsense/">Add nonsense</a></p>
+                <p>
+                  Designing for people with disabilities is in large part uncharted
+                  territory. Nonsense can be a useful tool to investigate the
+                  unkown. And it’s fun.
+                </p>
+              </li>
+            </ol>
+          </section>
+            <h3>Meta</h3>
+            <ul>
+              <li><a href="/thesaurus/">Glossary</a></li>
+              <li><a href="/colophon/">Colophon</a></li>
+              <li><a href="/literature/">Literature</a></li>
+              <li><a href="/thank-you/">Thank you</a></li>
+              <li><a href="/tools/">Tools</a></li>
+            </ul>
+          </section>
       </section>
       <div class="page-content"></div>
     </main>
 
     <footer class="news">
       <div class="news__weather"></div>
-      <section class="news__articles">
-        <h3>The Exclusive Design Principles</h3>
-        <p>
-          During my research at the Master Design I have worked with four
-          exclusive design principles. With some good will we can organise all
-          chapters in this thesis into these four principles.
-        </p>
-        <ol>
-          <li>
-            <p><a href="/principles/study-situation/">Study situation</a></p>
-            <p>
-              In order to become specialist designers for all kinds of people
-              with all kinds of disabilities we have to study different,
-              individual situations.
-            </p>
-          </li>
-          <li>
-            <p>
-              <a href="/principles/ignore-conventions/">Ignore conventions</a>
-            </p>
-            <p>
-              The current conventions are designed by, and thus for, designers.
-              Not all of these conventions work for non-designers. If we want to
-              include non-designers, and especially people with disabilities, we
-              should reconsider these conventions, after we studied their
-              situations.
-            </p>
-          </li>
-          <li>
-            <p>
-              <a href="/principles/prioritise-identity/">Prioritise identity</a>
-            </p>
-            <p>
-              Including excluded people into our design process, by seeing them
-              as co-designers rather than study objects, can help in coming up
-              with new, and relevant, conventions.
-            </p>
-          </li>
-          <li>
-            <p><a href="/principles/add-nonsense/">Add nonsense</a></p>
-            <p>
-              Designing for people with disabilities is in large part uncharted
-              territory. Nonsense can be a useful tool to investigate the
-              unkown. And it’s fun.
-            </p>
-          </li>
-        </ol>
-      </section>
-      <section>
-        <h3>Meta</h3>
-        <ul>
-          <li><a href="/thesaurus/">Glossary</a></li>
-          <li><a href="/colophon/">Colophon</a></li>
-          <li><a href="/literature/">Literature</a></li>
-          <li><a href="/thank-you/">Thank you</a></li>
-          <li><a href="/tools/">Tools</a></li>
-        </ul>
-      </section>
+      
     </footer>
     <script src="./js/main.js"></script>
     <!-- HTML taken and improved from https://exclusive-design.vasilis.nl/add-nonsense/ -->

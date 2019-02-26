@@ -1,0 +1,29 @@
+.solution {
+  &__heading {
+    font-size: 8vw;
+    text-align: center;
+    font-family: "Brotherhood", cursive;
+    margin: 3rem auto 0;
+  }
+  &__image {
+    width: 50%;
+    text-align: center;
+    padding: 4em 0;
+    margin: 0 auto;
+  }
+  &__videos {
+    width: 50%;
+    padding: 2em;
+    margin: 0 auto;
+    display: block;
+  }
+  &__subtitle {
+    padding: 0 2em;
+    text-align: center;
+  }
+  &__content {
+    width: 50%;
+    padding: 0 3em;
+    margin: 0 auto;
+  }
+}

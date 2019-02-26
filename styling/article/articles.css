@@ -1,16 +1,33 @@
-@import "./parallax/parallax.css";
+@import "./_parallax/parallax.css";
+@import "./_introduction/introduction.css";
+@import "./_solution/solution.css";
+@import "./_fun/fun.css";
+@import "./_talking-dogs/talking-dogs.css";
+@import "./_thoughts/thoughts.css";
+@import "./_related/related.css";
+@import "./_footnotes/footnotes.css";
+@import "./figure/figure.css";
 
+:root {
+  --titleFont: "Poppins";
+}
 .article {
-  padding: 0 2em;
   grid-area: main-start;
   opacity: 0;
   animation: 1s fadeInUpContent ease-in-out forwards;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0 5vw;
+  box-sizing: border-box;
 
   &__title {
     font-family: var(--titleFont);
     line-height: 0.7;
     font-size: 12vw;
     position: relative;
+    text-align: center;
+    width: 90%;
+    margin: 0.5em auto 0;
 
     span {
       opacity: 0;
@@ -38,7 +55,12 @@
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
       -webkit-animation: stripes 2s linear infinite;
+      background-clip: text;
       animation: stripes 2s linear infinite;
     }
+  }
+
+  &__content {
+    padding: 0 3em;
   }
 }

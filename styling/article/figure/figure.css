@@ -1,0 +1,5 @@
+.figure {
+  &__image {
+    width: 100%;
+  }
+}

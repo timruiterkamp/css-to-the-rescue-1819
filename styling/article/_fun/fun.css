@@ -1,0 +1,47 @@
+@import "../../animations.css";
+
+.fun {
+  text-align: center;
+
+  &__title {
+    text-align: center;
+    font-size: 12vw;
+    padding: 0;
+    margin: 0;
+    font-family: "Brotherhood", cursive;
+    z-index: -1;
+    background-image: -webkit-linear-gradient(
+      rgb(232, 232, 15) 30%,
+      orange 70%
+    );
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-size: 100% 10px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-animation: stripes 2s linear infinite;
+    background-clip: text;
+    animation: stripes 2s linear infinite;
+  }
+
+  &__strong {
+    z-index: -1;
+    background-image: -webkit-linear-gradient(
+      rgb(232, 232, 15) 30%,
+      orange 70%
+    );
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-size: 100% 10px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-animation: stripes 2s linear infinite;
+    background-clip: text;
+    animation: stripes 2s linear infinite;
+  }
+
+  &__content {
+    width: 70%;
+    margin: 0 auto;
+  }
+}

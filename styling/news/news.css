@@ -4,6 +4,7 @@
   grid-area: main-end;
   height: 100vh;
   overflow: scroll;
+  width: 25vw;
 
   &__weather {
     background-color: var(--color-blue);

@@ -1,5 +1,5 @@
 @import "./_nav/nav.css";
 
 .header {
-  grid-area: full-start;
+  position: absolute;
 }

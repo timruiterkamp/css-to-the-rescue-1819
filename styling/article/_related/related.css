@@ -1,0 +1,58 @@
+@import "./story/story.css";
+@import "../../animations.css";
+
+.related {
+  &__title {
+    text-align: center;
+    font-size: 8vw;
+    font-family: "Brotherhood", cursive;
+  }
+  &__subtitle {
+    text-align: center;
+    font-size: 3vw;
+  }
+  &__content {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 5em;
+  }
+  &__articles {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+    padding: 1em 0;
+  }
+  &__article {
+    list-style-type: none;
+    min-width: 300px;
+    height: 400px;
+    background-color: white;
+    margin: 0 1em;
+    border-radius: 1em;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.95);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+    &:nth-child(odd) {
+      animation: polygons-odd 6s alternate infinite;
+    }
+
+    &:nth-child(even) {
+      animation: polygons 10s alternate infinite;
+    }
+
+    &:hover {
+      transform: scale(1);
+      clip-path: polygon(0% 0%, 98% 0%, 100% 93%, 0% 97%);
+
+      animation: none;
+    }
+
+    &:first-of-type {
+      margin: 0 1em 0 0;
+    }
+  }
+}

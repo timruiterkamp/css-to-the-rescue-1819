@@ -1,0 +1,26 @@
+.thoughts {
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__heading {
+    font-size: 8vw;
+    text-align: center;
+    font-family: "Brotherhood", cursive;
+  }
+  &__image-wrapper {
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  &__content-wrapper {
+    width: 50%;
+  }
+  &__image {
+    width: 70%;
+    align-self: center;
+  }
+  &__content {
+    padding: 0 3em;
+  }
+}

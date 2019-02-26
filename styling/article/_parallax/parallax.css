@@ -51,14 +51,14 @@
   }
 
   &__object-2 {
-    margin-top: 850px;
+    margin-top: 1350px;
     background: linear-gradient(to left, #ee9ca7, #ffdde1);
     height: 500%;
     padding: 2em 1em;
   }
 
   &__object-3 {
-    margin-top: 1450px;
+    margin-top: 2400px;
     background: linear-gradient(
       to left,
       #0f2027,
@@ -71,7 +71,7 @@
   }
 
   &__object-4 {
-    margin-top: 2150px;
+    margin-top: 3300px;
     background: linear-gradient(
       to left,
       #f12711,
@@ -82,7 +82,7 @@
   }
 
   &__object-5 {
-    margin-top: 3950px;
+    margin-top: 4650px;
     height: 100%;
     background: linear-gradient(
       to left,
@@ -93,7 +93,7 @@
   }
 
   &__object-6 {
-    margin-top: 4050px;
+    margin-top: 4650px;
     background: linear-gradient(
       to left,
       #36d1dc,
@@ -104,7 +104,7 @@
   }
 
   &__object-7 {
-    margin-top: 5150px;
+    margin-top: 5750px;
     height: 500%;
     padding: 2em 1em;
     background-color: #fff;
