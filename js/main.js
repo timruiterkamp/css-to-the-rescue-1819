@@ -5,7 +5,7 @@ getTime();
 
 function fetchWeather() {
   fetch(
-    "https://api.darksky.net/forecast/4410c51917a1784fbf3c8188902767d0/52.3680,4.9036"
+    "https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/4410c51917a1784fbf3c8188902767d0/52.3680,4.9036"
   )
     .then(response => response.json())
     .then(data => {
