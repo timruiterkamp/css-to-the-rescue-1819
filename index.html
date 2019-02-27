@@ -10,37 +10,13 @@
       <nav class="header__nav menu">
         <input class="menu__btn" type="checkbox" id="menu-btn" />
         <label class="menu__label" for="menu-btn"></label>
-        <ul class="menu__items">
-          <li class="menu__item">
-            <a class="menu__link menu__link--active" href="#article__solution"
-              >Introduction</a
-            >
-          </li>
-
-          <li class="menu__item">
-            <a class="menu__link" href="#article__solution">Solutions</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#article__personal-thoughts"
-              >personal thoughts</a
-            >
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#article__talkingdogs">Talking dogs</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#article__related">Related</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#article__footnotes">Footnotes</a>
-          </li>
-        </ul>
+          <div class="menu__weather weather"></div>
       </nav>
     </header>
 
     <main class="article parallax">
-      <h1 class="article__title">
-        <span>A</span><span>d</span><span>d</span> nonsense
+      <h1 class="article__title title" >
+          <div class="title__content" data-text="add nonsense">Add nonsense</div>
       </h1>
 
       <section
@@ -198,34 +174,19 @@
               class="thoughts__footnote"
               ><sup>3</sup></a
             >
-          </p>
-
-          <p class="thoughts__content">
-            At first this idea of making colour accessible to blind people
-            seemed nonsensical to me, since I assumed blind people can’t see
-            colour. Later it turned out that some blind people can see colour,
-            and others may have memory of it, like I explained in the section
-            about
-            <a
-              href="https://exclusive-design.vasilis.nl/fuckups-mama/#assumptionsaboutblindpeople"
-              class="thoughts__link"
-              >Assumptions about blind people</a
-            >.
-          </p>
-
-          <p class="thoughts__content">
-            Just like the six-key-typing project by Rick Buter, this is an
-            example of using nonsense in order to allow weird ideas, and
-            exploring them. And in these cases they resulted in valuable new
-            insights.
-          </p>
-
-          <p class="thoughts__content">
-            Apart from a simple ideation tool to allow weird ideas, there are
-            other reasons to use nonsense as well. Other reasons are lifting
-            ideas beyond the obvious, breaking out of a single rusty context,
-            exploring the unexpected, and of course having fun.
-          </p>
+            </p>
+            <p class="thoughts__content">
+                At first this idea of making colour accessible to blind people
+                seemed nonsensical to me, since I assumed blind people can’t see
+                colour. Later it turned out that some blind people can see colour,
+                and others may have memory of it, like I explained in the section
+                about
+                <a
+                  href="https://exclusive-design.vasilis.nl/fuckups-mama/#assumptionsaboutblindpeople"
+                  class="thoughts__link"
+                  >Assumptions about blind people</a
+                >.
+              </p>
             </div>
           <div class="thoughts__image-wrapper"> 
             <figure class="thoughts__image figure">
@@ -235,6 +196,19 @@
                 all — on a rather saturated, dark red background
               </figcaption>
             </figure>
+              <p class="thoughts__content">
+                Just like the six-key-typing project by Rick Buter, this is an
+                example of using nonsense in order to allow weird ideas, and
+                exploring them. And in these cases they resulted in valuable new
+                insights.
+              </p>
+    
+              <p class="thoughts__content">
+                Apart from a simple ideation tool to allow weird ideas, there are
+                other reasons to use nonsense as well. Other reasons are lifting
+                ideas beyond the obvious, breaking out of a single rusty context,
+                exploring the unexpected, and of course having fun.
+              </p>
           </div>
         </div>
         </div>
@@ -540,13 +514,13 @@
           </ul>
         </div>
       </section>
-
+ 
       <section class="article__footnotes footnotes parallax__object-wrapper parallax__speed-7">
         <div class="footnotes__wrapper parallax__object parallax__object-7">
           <h2 class="footnotes__title">footnotes</h2>
           <ol class="footnotes__list list">
             <li id="fn-1" class="list__item">
-              <p>
+              <p class="footnotes__content">
                 Six Key Typing. Rick Buter and Vasilis van Gemert. Git
                 repository. Accessed December 16 2018.
                 <a href="https://github.com/vasilisvg/six-key-typing"
@@ -561,7 +535,7 @@
               </p>
             </li>
             <li id="fn-2" class="list__item">
-              <p>
+              <p class="footnotes__content">
                 Creative Quest. Questlove. Ecco. Hardcover. 2018
                 <a
                   href="#fnref-2"
@@ -572,7 +546,7 @@
               </p>
             </li>
             <li id="fn-3" class="list__item">
-              <p>
+              <p class="footnotes__content">
                 Human Colours. Vasilis van Gemert at al. Git Repository. 2013.
                 <a href="https://github.com/vasilisvg/human-colours"
                   >github.com/<wbr />vasilisvg/<wbr />human-<wbr />colours</a
@@ -586,7 +560,7 @@
               </p>
             </li>
             <li id="fn-4" class="list__item">
-              <p>
+              <p class="footnotes__content">
                 See for example
                 <a href="https://www.microsoft.com/en-us/seeing-ai/"
                   >Seeing AI</a
@@ -601,7 +575,7 @@
               </p>
             </li>
             <li id="fn-5" class="list__item">
-              <p>
+              <p class="footnotes__content">
                 Maaike van Cruchten et al. The First Exclusive Design Challenge.
                 Team Larissa. 2017.
                 <a
@@ -615,9 +589,9 @@
                   >&#160;&#8617;</a
                 >
               </p>
-            </li>
+            </li class="footnotes__content">
             <li id="fn-6" class="list__item">
-              <p>
+              <p class="footnotes__content">
                 See the chapter about false assumptions called
                 <a href="/fuckups-mama/">Fuckup’s mama</a>
                 <a
@@ -629,7 +603,7 @@
               </p>
             </li>
             <li id="fn-7" class="list__item">
-              <p>
+              <p class="footnotes__content">
                 See the chapter about
                 <a href="/design-like-its-1999/">Designing Like It’s 1999</a>
                 <a
@@ -641,7 +615,7 @@
               </p>
             </li>
             <li id="fn-8" class="list__item">
-              <p>
+              <p class="footnotes__content">
                 See the chapter about
                 <a href="/invisible-animations/">Insivible Animations</a>
                 <a
@@ -714,11 +688,6 @@
       </section>
       <div class="page-content"></div>
     </main>
-
-    <footer class="news">
-      <div class="news__weather"></div>
-      
-    </footer>
     <script src="./js/main.js"></script>
     <!-- HTML taken and improved from https://exclusive-design.vasilis.nl/add-nonsense/ -->
   </body>

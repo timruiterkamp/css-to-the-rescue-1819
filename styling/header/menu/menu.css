@@ -1,10 +1,4 @@
 .menu {
-  &__items {
-    clear: both;
-    max-width: 0;
-    overflow: hidden;
-  }
-
   &__label {
     position: fixed;
     bottom: 2vh;
@@ -29,7 +23,7 @@
     }
 
     &:before {
-      content: "Menu";
+      content: "Weather";
       margin: 0;
       transition: 1s ease-in-out;
     }
@@ -50,6 +44,15 @@
           text-align: center;
           animation: 0.7s 0.3s fadeInUp forwards;
           z-index: 2;
+        }
+
+        &__weather {
+          display: block;
+          z-index: 100;
+          position: fixed;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
         }
 
         &__label {
@@ -94,52 +97,7 @@
       }
     }
   }
-
-  &__link {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    position: relative;
-
-    &:hover {
-      &:before {
-        content: "CHOOSE ME";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        font-family: "Brotherhood", cursive;
-        font-size: 6em;
-        color: #ffffff75;
-        font-weight: 700;
-        display: block;
-        width: 100vw;
-        transform: translate(-50%, -50%);
-        z-index: -1;
-      }
-    }
-
-    &--active {
-      font-weight: bold;
-
-      &:before {
-        content: "THE CHOSEN ONE";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        font-family: "Brotherhood", cursive;
-        font-size: 6rem;
-        color: #ffffff75;
-        font-weight: 700;
-        display: block;
-        width: 100vw;
-        transform: translate(-50%, -50%);
-        z-index: -1;
-      }
-    }
-  }
-
-  &__item {
-    padding: 1.5em 0;
-    list-style-type: none;
+  &__weather {
+    display: none;
   }
 }

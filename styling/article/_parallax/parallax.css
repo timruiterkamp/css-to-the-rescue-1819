@@ -24,6 +24,17 @@
 
   &__speed-3 {
     transform: translateZ(-3px) scale(4);
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: 100;
+      left: -22vw;
+      top: 230%;
+      width: 500px;
+      height: 500px;
+      animation: polygons-odd 10s alternate infinite;
+      clip-path: polygon(0% 0%, 97% 4%, 100% 34%, 0% 38%);
+    }
   }
 
   &__speed-4 {
@@ -48,6 +59,19 @@
   &__object-1 {
     margin-top: 500px;
     height: 500%;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      right: 7vw;
+      top: 30vh;
+      width: 500px;
+      height: 500px;
+      animation: polygons 10s alternate infinite;
+      clip-path: polygon(13% 2%, 100% 0%, 125% 39%, 0% 34%);
+    }
   }
 
   &__object-2 {
@@ -55,6 +79,7 @@
     background: linear-gradient(to left, #ee9ca7, #ffdde1);
     height: 500%;
     padding: 2em 1em;
+    clip-path: polygon(13% 2%, 100% 0%, 125% 39%, 0% 34%);
   }
 
   &__object-3 {
@@ -68,6 +93,7 @@
     color: white;
     height: 500%;
     padding: 2em 1em;
+    clip-path: polygon(0% 0%, 97% 4%, 100% 34%, 0% 38%);
   }
 
   &__object-4 {
@@ -79,6 +105,7 @@
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 500%;
     padding: 2em 1em;
+    clip-path: polygon(0% 4%, 100% 0%, 100% 45%, 0% 100%);
   }
 
   &__object-5 {
@@ -90,6 +117,7 @@
       #8f94fb
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 2em 1em;
+    clip-path: polygon(11% 0%, 85.4% 0%, 100% 70%, 0% 100%);
   }
 
   &__object-6 {
@@ -101,12 +129,25 @@
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 500%;
     padding: 2em 1em;
+    clip-path: polygon(0% 0%, 97% 2%, 91% 63%, 4% 100%);
   }
 
   &__object-7 {
-    margin-top: 5750px;
+    margin-top: 5450px;
     height: 500%;
     padding: 2em 1em;
     background-color: #fff;
+
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: 100;
+      right: -22vw;
+      transform: translateY(150%);
+      width: 500px;
+      height: 500px;
+      animation: polygons-odd 10s alternate infinite;
+      clip-path: polygon(0% 0%, 97% 4%, 100% 34%, 0% 38%);
+    }
   }
 }

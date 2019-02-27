@@ -10,7 +10,7 @@ function fetchWeather() {
     .then(response => response.json())
     .then(data => {
       console.log(data);
-      let container = document.querySelector(".news__weather");
+      let container = document.querySelector(".weather");
       let wind = data.currently.windSpeed / 10;
       degToCompass(data.currently.windBearing);
 

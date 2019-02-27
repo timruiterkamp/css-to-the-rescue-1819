@@ -1,0 +1,12 @@
+.footnotes {
+  &__title {
+    text-align: center;
+    font-size: 8vw;
+    font-family: "Brotherhood", cursive;
+    color: #3a3a3a;
+  }
+  &__list {
+    width: 50%;
+    margin: 0 auto;
+  }
+}

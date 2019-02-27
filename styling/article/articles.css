@@ -7,12 +7,12 @@
 @import "./_related/related.css";
 @import "./_footnotes/footnotes.css";
 @import "./figure/figure.css";
+@import "./title/title.css";
 
 :root {
   --titleFont: "Poppins";
 }
 .article {
-  grid-area: main-start;
   opacity: 0;
   animation: 1s fadeInUpContent ease-in-out forwards;
   width: 100vw;
@@ -20,18 +20,34 @@
   padding: 0 5vw;
   box-sizing: border-box;
 
-  &__title {
-    font-family: var(--titleFont);
-    line-height: 0.7;
-    font-size: 12vw;
-    position: relative;
-    text-align: center;
-    width: 90%;
-    margin: 0.5em auto 0;
+  .title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-20%, -50%);
 
-    span {
-      opacity: 0;
-      animation: bounce 0.5s 2s ease-in-out forwards;
+    > * {
+      font-family: var(--titleFont);
+      line-height: 0.8;
+      font-size: 10vw;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      mix-blend-mode: difference;
+    }
+    &__content {
+      color: #f00;
+      left: -0.5px;
+      text-transform: uppercase;
+
+      &:before {
+        content: data(text);
+        position: absolute;
+        top: 0;
+        left: 2px;
+      }
     }
 
     &:before {
@@ -41,6 +57,7 @@
       left: 50%;
       font-family: "Brotherhood", cursive;
       font-size: 17vw;
+      padding: 1em;
       color: #0000000d;
       font-weight: 700;
       display: block;
@@ -51,7 +68,7 @@
       background-image: -webkit-linear-gradient(crimson 50%, white 50%);
       background-repeat: repeat;
       background-position: 0 0;
-      background-size: 100% 10px;
+      background-size: 100% 5px;
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
       -webkit-animation: stripes 2s linear infinite;
