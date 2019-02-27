@@ -22,6 +22,12 @@
     -webkit-animation: stripes 2s linear infinite;
     background-clip: text;
     animation: stripes 2s linear infinite;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      font-size: 20vw;
+      background-size: 100% 5px;
+    }
 
     @media screen and (max-width: 480px) {
       font-size: 18vw;

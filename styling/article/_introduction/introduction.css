@@ -1,3 +1,5 @@
+@import "../../animations.css";
+
 .introduction {
   &__content {
     padding: 2em 3em;
@@ -54,5 +56,14 @@
     padding: 0 2em;
     text-align: center;
     background-color: white;
+  }
+}
+
+.night {
+  .introduction {
+    &__content,
+    &__image {
+      color: #3a3a3a;
+    }
   }
 }

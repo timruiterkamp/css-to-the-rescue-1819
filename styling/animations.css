@@ -103,3 +103,56 @@
     background: pink;
   }
 }
+@keyframes polygons-before {
+  25% {
+    clip-path: polygon(0% 0%, 71% 0%, 71% 37%, 0% 4%);
+    background: rgb(42, 111, 240);
+  }
+  50% {
+    clip-path: polygon(0% 0%, 71% 0%, 50% 30%, 0% 8%);
+    background: rgb(56, 228, 168);
+  }
+  75% {
+    clip-path: polygon(0% 0%, 71% 0%, 41% 50%, 0% 4%);
+    background: rgb(242, 87, 113);
+  }
+}
+
+@keyframes polygons-after {
+  25% {
+    clip-path: polygon(0% 0%, 10% 0%, 70% 17%, 0% 44%);
+    background: cornflowerblue;
+  }
+  50% {
+    clip-path: polygon(0% 0%, 31% 0%, 30% 67%, 0% 4%);
+    background: orange;
+  }
+  75% {
+    clip-path: polygon(0% 0%, 71% 0%, 70% 17%, 0% 44%);
+    background: pink;
+  }
+}
+
+@keyframes filters {
+  25% {
+    filter: hue-rotate(60deg);
+  }
+  50% {
+    filter: hue-rotate(270deg);
+  }
+  75% {
+    filter: hue-rotate(100deg);
+  }
+}
+
+@keyframes filters-night {
+  25% {
+    filter: hue-rotate(60deg) blur(1px);
+  }
+  50% {
+    filter: hue-rotate(270deg) blur(3px);
+  }
+  75% {
+    filter: hue-rotate(100deg) blur(1px);
+  }
+}

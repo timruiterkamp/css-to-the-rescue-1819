@@ -7,11 +7,7 @@
 :root {
   --baseFont: "Open Sans";
   --titleFont: "Poppins";
-  --color-grey: #f3f6fb;
-  --color-blue: #4cc4fb;
-  --color-dark-blue: #03a9f4;
-  --color-wind: #ccefff;
-  --color-wind-dark: #7fd8f7;
+  --color-night: #212121;
 }
 
 html {
@@ -38,13 +34,13 @@ body {
   overflow-x: hidden;
 
   &.night {
-    background-color: #3a3a3a;
+    background-color: var(--color-night);
     color: white;
   }
 }
 
 .page-content {
-  height: 50000px;
+  height: 52000px;
 
   @media screen and (max-width: 60rem) {
     height: 71000px;

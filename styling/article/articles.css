@@ -86,3 +86,14 @@
     }
   }
 }
+
+.night {
+  .article-heading {
+    &__title {
+      color: white;
+    }
+    &:before {
+      background-image: -webkit-linear-gradient(salmon 50%, green 50%);
+    }
+  }
+}

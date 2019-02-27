@@ -15,17 +15,17 @@
     justify-content: center;
   }
 
-  &__speed--1 {
+  &__speed-1 {
     transform: translateZ(-1px) scale(2);
     transform-origin: 50% 50%;
   }
 
-  &__speed--2 {
+  &__speed-2 {
     transform: translateZ(-2px) scale(3);
     transform-origin: 50% 50%;
   }
 
-  &__speed--3 {
+  &__speed-3 {
     transform: translateZ(-3px) scale(4);
     transform-origin: 50% 50%;
 
@@ -33,8 +33,8 @@
       content: "";
       position: absolute;
       z-index: 100;
-      left: -22vw;
-      top: 160%;
+      left: -12vw;
+      top: 240%;
       width: 500px;
       height: 500px;
       animation: polygons-odd 10s alternate infinite;
@@ -46,20 +46,20 @@
     }
   }
 
-  &__speed--4 {
+  &__speed-4 {
     transform: translateZ(-4px) scale(5);
     transform-origin: 50% 50%;
   }
 
-  &__speed--5 {
+  &__speed-5 {
     transform: translateZ(-5px) scale(6);
     transform-origin: 50% 50%;
   }
-  &__speed--6 {
+  &__speed-6 {
     transform: translateZ(-6px) scale(7);
     transform-origin: 50% 50%;
   }
-  &__speed--7 {
+  &__speed-7 {
     transform: translateZ(-7px) scale(8);
     transform-origin: 50% 50%;
   }
@@ -69,7 +69,7 @@
     width: 100%;
   }
 
-  &__object--1 {
+  &__object-1 {
     margin-top: 500px;
     height: 500%;
     position: relative;
@@ -83,12 +83,34 @@
       content: "";
       position: absolute;
       z-index: -1;
-      right: 0;
-      top: 30vh;
-      width: 200px;
-      height: 200px;
-      animation: polygons 10s alternate infinite;
-      clip-path: polygon(13% 2%, 100% 0%, 125% 39%, 0% 34%);
+      right: 9.36vw;
+      top: 41vh;
+      width: 699px;
+      height: 1030px;
+      -webkit-animation: polygons-before 10s alternate infinite;
+      animation: polygons-before 10s alternate infinite;
+      -webkit-clip-path: polygon(0% 0%, 71% 0%, 71% 37%, 0% 4%);
+      clip-path: polygon(0% 0%, 71% 0%, 71% 37%, 0% 4%);
+      background-color: white;
+
+      @media screen and (max-width: 60rem) {
+        display: none;
+      }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 21.4vw;
+      top: 82vh;
+      width: 80vw;
+      height: 330px;
+      -webkit-animation: polygons-after 10s alternate infinite;
+      animation: polygons-after 10s alternate infinite;
+      -webkit-clip-path: polygon(0% 0%, 71% 0%, 70% 17%, 0% 44%);
+      clip-path: polygon(0% 0%, 71% 0%, 70% 17%, 0% 44%);
+      background-color: white;
 
       @media screen and (max-width: 60rem) {
         display: none;
@@ -96,7 +118,7 @@
     }
   }
 
-  &__object--2 {
+  &__object-2 {
     margin-top: 1350px;
     background: linear-gradient(to left, #ee9ca7, #ffdde1);
     height: 500%;
@@ -108,7 +130,7 @@
     }
   }
 
-  &__object--3 {
+  &__object-3 {
     margin-top: 2400px;
     background: linear-gradient(
       to left,
@@ -127,7 +149,7 @@
     }
   }
 
-  &__object--4 {
+  &__object-4 {
     margin-top: 3300px;
     background: linear-gradient(
       to left,
@@ -146,8 +168,8 @@
     }
   }
 
-  &__object--5 {
-    margin-top: 6250px;
+  &__object-5 {
+    margin-top: 4780px;
     height: 100%;
     background: linear-gradient(
       to left,
@@ -165,14 +187,14 @@
     }
   }
 
-  &__object--6 {
+  &__object-6 {
     margin-top: 4750px;
     background: linear-gradient(
       to left,
       #36d1dc,
       #5b86e5
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: 500%;
+    height: 240%;
     padding: 2em 1em;
     clip-path: polygon(0% 0%, 97% 2%, 91% 63%, 4% 100%);
 
@@ -184,11 +206,12 @@
     }
   }
 
-  &__object--7 {
-    margin-top: 5650px;
+  &__object-7 {
+    margin-top: 5390px;
     height: 100%;
     padding: 2em 1em;
     background-color: #fff;
+    clip-path: polygon(30% 10%, 90% 10%, 91% 100%, 0% 100%);
 
     @media screen and (max-width: 60rem) {
       margin-top: 7600px;
@@ -210,6 +233,23 @@
       @media screen and (max-width: 60rem) {
         transform: translateY(250%);
       }
+    }
+  }
+}
+
+.night {
+  .parallax {
+    &__object-2 {
+      background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    }
+    &__object-4 {
+      background: linear-gradient(to right, #243b55, #141e30);
+    }
+    &__object-5 {
+      background: linear-gradient(to right, #ff9472, #f2709c);
+    }
+    &__object-6 {
+      background: linear-gradient(to right, #4e4376, #2b5876);
     }
   }
 }
