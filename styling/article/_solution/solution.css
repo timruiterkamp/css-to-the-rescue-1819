@@ -5,17 +5,38 @@
     font-family: "Brotherhood", cursive;
     margin: 3rem auto 0;
   }
+
   &__image {
     width: 50%;
     text-align: center;
     padding: 4em 0;
     margin: 0 auto;
+
+    .figure {
+      &__image {
+        clip-path: polygon(100% 0, 50% 100%, 50% 100%, 0 0%);
+        animation: polygons-image 4s linear infinite;
+
+        &:hover {
+          animation: none;
+          clip-path: polygon(100% 0%, 100% 100%, 0 100%, 5% 10%);
+          filter: grayscale(1) blur(0.2);
+        }
+      }
+    }
   }
   &__videos {
     width: 50%;
     padding: 2em;
     margin: 0 auto;
     display: block;
+    clip-path: polygon(25% -50%, 100% 100%, 0% 100%, 0 0%);
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      clip-path: polygon(100% 0%, 100% 100%, 0 100%, 5% 10%);
+      width: 80%;
+    }
   }
   &__subtitle {
     padding: 0 2em;
@@ -25,5 +46,9 @@
     width: 50%;
     padding: 0 3em;
     margin: 0 auto;
+  }
+  &__link {
+    color: white;
+    cursor: pointer;
   }
 }

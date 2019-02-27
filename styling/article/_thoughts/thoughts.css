@@ -7,7 +7,29 @@
     font-size: 8vw;
     text-align: center;
     font-family: "Brotherhood", cursive;
-    padding-top: 3rem;
+    padding-top: 10rem;
+  }
+  &__link {
+    color: white;
+    transition: transform ease;
+    cursor: pointer;
+    transform: scale(1);
+
+    &:hover {
+      transform: scale(1.1);
+      background-image: -webkit-linear-gradient(
+        rgb(232, 127, 15) 30%,
+        white 70%
+      );
+      background-repeat: repeat;
+      background-position: 0 0;
+      background-size: 100% 10px;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-animation: stripes 2s linear infinite;
+      background-clip: text;
+      animation: stripes 2s linear infinite;
+    }
   }
   &__image-wrapper {
     width: 50%;
@@ -21,6 +43,7 @@
   &__image {
     width: 70%;
     align-self: center;
+    clip-path: polygon(25% -50%, 100% 100%, 0% 100%, 0 0%);
   }
   &__content {
     padding: 0 3em;

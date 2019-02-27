@@ -39,27 +39,15 @@
   }
 }
 
-@keyframes giggle {
-  0%,
-  100% {
-    transform: translate(-50%, -50%) translateY(-2px);
-  }
-  50% {
-    transform: translate(-50%, -50%) translateY(2px);
-  }
-}
-@keyframes lines {
-  0% {
-    background-position: 0px 0px;
-  }
-  100% {
-    background-position: 0px 25px;
-  }
-}
 @keyframes stripes {
-  100% {
+  50% {
     background-position: 0 -50px;
     background-size: 100% 20px;
+  }
+
+  100% {
+    background-position: 0 0;
+    background-size: 100% 10px;
   }
 }
 
@@ -74,18 +62,30 @@
   }
 }
 
+@keyframes polygons-image {
+  25% {
+    clip-path: polygon(100% 0, 50% 100%, 50% 100%, 0 0%);
+  }
+  55% {
+    clip-path: polygon(50% 46%, 100% 75%, 55% 74%, 0 100%);
+  }
+  75% {
+    clip-path: polygon(100% 38%, 100% 38%, 36% 100%, 0 53%);
+  }
+}
+
 @keyframes polygons-odd {
   25% {
     clip-path: polygon(20% 0%, 100% 38%, 70% 90%, 0% 100%);
-    background: pink;
+    background: turquoise;
   }
   50% {
     clip-path: polygon(0 46%, 100% 15%, 55% 74%, 0 100%);
-    background: orange;
+    background: salmon;
   }
   75% {
     clip-path: polygon(100% 38%, 100% 38%, 66% 100%, 0 53%);
-    background: cornflowerblue;
+    background: papayawhip;
   }
 }
 

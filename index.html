@@ -14,16 +14,18 @@
       </nav>
     </header>
 
-    <main class="article parallax">
-      <h1 class="article__title title" >
-          <div class="title__content" data-text="add nonsense">Add nonsense</div>
+    <main class="article">
+      <h1 class="article__title article-heading" >
+          <span class="article-heading__title" data-text="add nonsense">Add nonsense</span>
       </h1>
+
+      <div class="parallax">
 
       <section
         id="intro"
-        class="article__introduction introduction parallax__object-wrapper parallax__speed-1"
+        class="article__introduction introduction parallax__object-wrapper parallax__speed--1"
       >
-        <div class="parallax__object parallax__object-1">
+        <div class="parallax__object parallax__object--1">
           <div class="introduction__wrapper">
           <p class="introduction__content">
             Marijn is a software engineer. He can only use his left hand, and
@@ -66,9 +68,9 @@
 
       <section
         id="solution"
-        class="article__solution solution parallax__object-wrapper parallax__speed-2"
+        class="article__solution solution parallax__object-wrapper parallax__speed--2"
       >
-        <div class="parallax__object parallax__object-2">
+        <div class="parallax__object parallax__object--2">
           <h2 class="solution__heading">Solution</h2>
           <div class="solution__wrapper">
           <figure class="solution__image figure">
@@ -125,9 +127,9 @@
 
       <section
         id="personal-thoughts"
-        class="thoughts article__thoughts parallax__object-wrapper parallax__speed-3"
+        class="thoughts article__thoughts parallax__object-wrapper parallax__speed--3"
       >
-        <div class="parallax__object parallax__object-3">
+        <div class="parallax__object parallax__object--3">
           <h2 class="thoughts__heading">Thoughts</h2>
           <div class="thoughts__wrapper">
             <div class="thoughts__content-wrapper">
@@ -143,7 +145,7 @@
               href="#fn-2"
               id="fnref-2"
               title="see footnote"
-              class="thoughts__footnote"
+              class="thoughts__link"
               ><sup>2</sup></a
             >
             (not just to listen to hidden satanic messages).
@@ -215,9 +217,9 @@
       </section>
 
       <section
-        class="article__talkingdogs talkingdogs parallax__object-wrapper parallax__speed-4"
+        class="article__talkingdogs talkingdogs parallax__object-wrapper parallax__speed--4"
       >
-        <div class="parallax__object parallax__object-4">
+        <div class="parallax__object parallax__object--4">
           <h2 class="talkingdogs__heading">The nononsense way</h2>
           <div class=" talkingdogs__wrapper">
           <div class="talkingdogs__ideas">
@@ -363,8 +365,8 @@
       </div>
       </section>
 
-      <section class="article__fun fun parallax__object-wrapper parallax__speed-5">
-        <div class="parallax__object parallax__object-5">
+      <section class="article__fun fun parallax__object-wrapper parallax__speed--5">
+        <div class="parallax__object parallax__object--5">
           <h2 class="fun__title" id="fun">Fun</h2>
 
           <p class="fun__content">
@@ -389,8 +391,8 @@
         </div>
       </section>
 
-      <section class="article__related related parallax__object-wrapper parallax__speed-6">
-        <div class="parallax__object parallax__object-6">
+      <section class="article__related related parallax__object-wrapper parallax__speed--6">
+        <div class="parallax__object parallax__object--6">
           <h2 class="related__title">Elsewhere on this website</h2>
           <h3 class="related__subtitle" >All articles</h3>
           <p class="related__content">
@@ -514,9 +516,10 @@
           </ul>
         </div>
       </section>
+
  
-      <section class="article__footnotes footnotes parallax__object-wrapper parallax__speed-7">
-        <div class="footnotes__wrapper parallax__object parallax__object-7">
+      <section class="article__footnotes footnotes parallax__object-wrapper parallax__speed--7">
+        <div class="footnotes__wrapper parallax__object parallax__object--7">
           <h2 class="footnotes__title">footnotes</h2>
           <ol class="footnotes__list list">
             <li id="fn-1" class="list__item">
@@ -628,65 +631,9 @@
             </li>
           </ol>
         </div>
-        <section class="news__articles">
-            <h3>The Exclusive Design Principles</h3>
-            <p>
-              During my research at the Master Design I have worked with four
-              exclusive design principles. With some good will we can organise all
-              chapters in this thesis into these four principles.
-            </p>
-            <ol>
-              <li>
-                <p><a href="/principles/study-situation/">Study situation</a></p>
-                <p>
-                  In order to become specialist designers for all kinds of people
-                  with all kinds of disabilities we have to study different,
-                  individual situations.
-                </p>
-              </li>
-              <li>
-                <p>
-                  <a href="/principles/ignore-conventions/">Ignore conventions</a>
-                </p>
-                <p>
-                  The current conventions are designed by, and thus for, designers.
-                  Not all of these conventions work for non-designers. If we want to
-                  include non-designers, and especially people with disabilities, we
-                  should reconsider these conventions, after we studied their
-                  situations.
-                </p>
-              </li>
-              <li>
-                <p>
-                  <a href="/principles/prioritise-identity/">Prioritise identity</a>
-                </p>
-                <p>
-                  Including excluded people into our design process, by seeing them
-                  as co-designers rather than study objects, can help in coming up
-                  with new, and relevant, conventions.
-                </p>
-              </li>
-              <li>
-                <p><a href="/principles/add-nonsense/">Add nonsense</a></p>
-                <p>
-                  Designing for people with disabilities is in large part uncharted
-                  territory. Nonsense can be a useful tool to investigate the
-                  unkown. And it’s fun.
-                </p>
-              </li>
-            </ol>
-          </section>
-            <h3>Meta</h3>
-            <ul>
-              <li><a href="/thesaurus/">Glossary</a></li>
-              <li><a href="/colophon/">Colophon</a></li>
-              <li><a href="/literature/">Literature</a></li>
-              <li><a href="/thank-you/">Thank you</a></li>
-              <li><a href="/tools/">Tools</a></li>
-            </ul>
-          </section>
       </section>
       <div class="page-content"></div>
+    </div>
     </main>
     <script src="./js/main.js"></script>
     <!-- HTML taken and improved from https://exclusive-design.vasilis.nl/add-nonsense/ -->
