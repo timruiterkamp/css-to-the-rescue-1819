@@ -22,6 +22,11 @@
     -webkit-animation: stripes 2s linear infinite;
     background-clip: text;
     animation: stripes 2s linear infinite;
+
+    @media screen and (max-width: 480px) {
+      font-size: 18vw;
+      padding-top: 4rem;
+    }
   }
 
   &__strong {
@@ -43,5 +48,12 @@
   &__content {
     width: 70%;
     margin: 0 auto;
+
+    @media screen and (max-width: 60rem) {
+      width: 100%;
+      padding: 0 2em;
+      box-sizing: border-box;
+      text-align: left;
+    }
   }
 }

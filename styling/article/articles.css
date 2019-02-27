@@ -44,6 +44,10 @@
     transform: translate(-50%, -50%);
     mix-blend-mode: difference;
 
+    @media screen and (max-width: 60rem) {
+      font-size: 17vw;
+    }
+
     &:before {
       content: data(text);
       position: absolute;
@@ -76,5 +80,9 @@
     -webkit-animation: stripes 5s linear infinite;
     background-clip: text;
     animation: stripes 5s linear infinite;
+
+    @media screen and (max-width: 60rem) {
+      font-size: 24vw;
+    }
   }
 }

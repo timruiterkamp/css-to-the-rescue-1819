@@ -4,6 +4,10 @@
     text-align: center;
     font-family: "Brotherhood", cursive;
     margin: 3rem auto 0;
+
+    @media screen and (max-width: 60rem) {
+      font-size: 14vw;
+    }
   }
 
   &__image {
@@ -11,6 +15,11 @@
     text-align: center;
     padding: 4em 0;
     margin: 0 auto;
+
+    @media screen and (max-width: 60rem) {
+      width: 70%;
+      box-sizing: border-box;
+    }
 
     .figure {
       &__image {
@@ -33,6 +42,11 @@
     clip-path: polygon(25% -50%, 100% 100%, 0% 100%, 0 0%);
     transition: 0.3s ease-in-out;
 
+    @media screen and (max-width: 60rem) {
+      width: 90%;
+      box-sizing: border-box;
+    }
+
     &:hover {
       clip-path: polygon(100% 0%, 100% 100%, 0 100%, 5% 10%);
       width: 80%;
@@ -46,6 +60,11 @@
     width: 50%;
     padding: 0 3em;
     margin: 0 auto;
+
+    @media screen and (max-width: 60rem) {
+      width: 90%;
+      box-sizing: border-box;
+    }
   }
   &__link {
     color: white;

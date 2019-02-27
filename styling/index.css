@@ -18,6 +18,12 @@ html {
   font-size: 125%;
   font-family: var(--baseFont);
   line-height: 1.5;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 60rem) {
+    font-size: 100%;
+    line-height: 1.2;
+  }
 }
 
 body {
@@ -38,4 +44,8 @@ body {
 
 .page-content {
   height: 50000px;
+
+  @media screen and (max-width: 60rem) {
+    height: 75000px;
+  }
 }

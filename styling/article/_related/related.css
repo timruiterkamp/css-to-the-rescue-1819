@@ -6,10 +6,19 @@
     text-align: center;
     font-size: 8vw;
     font-family: "Brotherhood", cursive;
+
+    @media screen and (max-width: 60rem) {
+      font-size: 14vw;
+      padding-top: 18rem;
+    }
   }
   &__subtitle {
     text-align: center;
     font-size: 3vw;
+
+    @media screen and (max-width: 60rem) {
+      font-size: 6vw;
+    }
   }
   &__content {
     width: 50%;
@@ -36,12 +45,24 @@
     transform: scale(0.95);
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 
+    @media screen and (max-width: 60rem) {
+      clip-path: circle(250px at 50px 200px);
+    }
+
     &:nth-child(odd) {
       animation: polygons-odd 6s alternate infinite;
+
+      @media screen and (max-width: 60rem) {
+        animation: none;
+      }
     }
 
     &:nth-child(even) {
       animation: polygons 10s alternate infinite;
+
+      @media screen and (max-width: 60rem) {
+        animation: none;
+      }
     }
 
     &:hover {

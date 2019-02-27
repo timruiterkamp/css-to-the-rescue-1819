@@ -6,6 +6,12 @@
     color: black;
     padding: 1em;
     font-size: 90%;
+
+    @media screen and (max-width: 60rem) {
+      padding: 1em 2em;
+      font-size: 100%;
+      text-align: left;
+    }
   }
 
   &__link {
@@ -14,5 +20,10 @@
     font-size: 1em;
     text-decoration: none;
     margin: 0 auto;
+
+    @media screen and (max-width: 60rem) {
+      text-align: left;
+      font-size: 10vw;
+    }
   }
 }
