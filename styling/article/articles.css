@@ -7,7 +7,6 @@
 @import "./_related/related.css";
 @import "./_footnotes/footnotes.css";
 @import "./figure/figure.css";
-@import "./title/title.css";
 
 :root {
   --titleFont: "Poppins";
