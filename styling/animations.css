@@ -118,6 +118,12 @@
   }
 }
 
+@-webkit-keyframes move {
+  from {-webkit-transform: translateX(-400px);}
+  to {-webkit-transform: translateX(1350px);}
+}
+
+
 @keyframes polygons-after {
   25% {
     clip-path: polygon(0% 0%, 10% 0%, 70% 17%, 0% 44%);

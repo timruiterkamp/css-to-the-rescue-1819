@@ -17,6 +17,7 @@ function fetchWeather() {
       document.querySelector(
         "body"
       ).style = `transform: skewY(${wind}deg); marginTop: ${wind};`;
+      document.querySelector("body").classList.add(data.currently.icon);
       container.classList.add(data.currently.icon);
       container.innerHTML = `
         <header>
@@ -30,10 +31,14 @@ function fetchWeather() {
         }</p>
       `;
 
+      const min = 0.2;
+      const max = 1;
       const body = document.querySelector("body");
       body.style = `line-height: ${1.5 *
-        (data.currently.pressure / 1000)}; opacity: ${1 -
-        (1 / data.currently.visibility) * 3}`;
+        (data.currently.pressure / 1000)}; opacity: ${data.currently
+        .visibility *
+        (max - min) +
+        min}`;
     })
     .catch(err => console.error(err));
 }

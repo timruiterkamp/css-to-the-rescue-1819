@@ -22,6 +22,10 @@
   &__content {
     padding: 0 3em;
   }
+
+  &__clouds {
+    display: none;
+  }
 }
 
 .article-heading {
@@ -94,6 +98,48 @@
     }
     &:before {
       background-image: -webkit-linear-gradient(salmon 50%, green 50%);
+    }
+  }
+}
+
+.fog,
+.partly-clouded,
+.clouded {
+  .article {
+    &__content {
+      padding: 0 3em;
+    }
+
+    &__clouds {
+      width: 40vh;
+      height: 42vw;
+      position: absolute;
+      display: block;
+    }
+
+    &__cloud1 {
+      top: 80px;
+      z-index: 100;
+      fill: #eee;
+      /* Animation shorthand syntax order: name, duration, timing-function, delay, iteration-count, direction, fill-mode */
+      -webkit-animation: move 20s linear infinite;
+      -moz-animation: move 20s linear infinite;
+      -o-animation: move 20s linear infinite;
+      animation: move 20s linear infinite;
+
+      &:hover {
+        transform: scale(10);
+      }
+    }
+
+    &__cloud2 {
+      top: 240px;
+      z-index: 200;
+      fill: #eee;
+      -webkit-animation: move 35s linear 10s infinite backwards;
+      -moz-animation: move 35s linear 10s infinite backwards;
+      -o-animation: move 35s linear 10s infinite backwards;
+      animation: move 35s linear 10s infinite backwards;
     }
   }
 }
