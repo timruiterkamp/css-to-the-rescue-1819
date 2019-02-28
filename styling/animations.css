@@ -119,10 +119,13 @@
 }
 
 @-webkit-keyframes move {
-  from {-webkit-transform: translateX(-400px);}
-  to {-webkit-transform: translateX(1350px);}
+  from {
+    -webkit-transform: translateX(-100vw);
+  }
+  to {
+    -webkit-transform: translateX(1350px);
+  }
 }
-
 
 @keyframes polygons-after {
   25% {

@@ -110,15 +110,15 @@
     }
 
     &__clouds {
-      width: 40vh;
-      height: 42vw;
+      width: 40vw;
+      height: 42vh;
       position: absolute;
       display: block;
     }
 
     &__cloud1 {
       top: 80px;
-      z-index: 100;
+      z-index: -1;
       fill: #eee;
       /* Animation shorthand syntax order: name, duration, timing-function, delay, iteration-count, direction, fill-mode */
       -webkit-animation: move 20s linear infinite;
@@ -133,7 +133,7 @@
 
     &__cloud2 {
       top: 240px;
-      z-index: 200;
+      z-index: -2;
       fill: #eee;
       -webkit-animation: move 35s linear 10s infinite backwards;
       -moz-animation: move 35s linear 10s infinite backwards;

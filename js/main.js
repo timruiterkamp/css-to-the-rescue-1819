@@ -32,13 +32,12 @@ function fetchWeather() {
       `;
 
       const min = 0.2;
-      const max = 1;
+      const max = 0.8;
       const body = document.querySelector("body");
       body.style = `line-height: ${1.5 *
         (data.currently.pressure / 1000)}; opacity: ${data.currently
         .visibility *
-        (max - min) +
-        min}`;
+        (max - min)}`;
     })
     .catch(err => console.error(err));
 }

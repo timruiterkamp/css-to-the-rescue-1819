@@ -24,11 +24,6 @@
     animation: stripes 2s linear infinite;
     transition: all 0.3s ease-in-out;
 
-    &:hover {
-      font-size: 20vw;
-      background-size: 100% 5px;
-    }
-
     @media screen and (max-width: 480px) {
       font-size: 18vw;
       padding-top: 10rem;
@@ -54,6 +49,23 @@
   &__content {
     width: 70%;
     margin: 0 auto;
+
+    &:hover {
+      font-size: 125%;
+      background-image: -webkit-linear-gradient(
+        rgb(232, 232, 15) 30%,
+        orange 70%
+      );
+      background-repeat: repeat;
+      background-position: 0 0;
+      background-size: 100% 10px;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-animation: stripes 2s linear infinite;
+      background-clip: text;
+      animation: stripes 2s linear infinite;
+      transition: all 0.3s ease-in-out;
+    }
 
     @media screen and (max-width: 60rem) {
       width: 100%;
